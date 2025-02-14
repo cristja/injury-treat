@@ -1,0 +1,31 @@
+Informe creado: 
+	12/11/2024	3:46:02 p. m.
+
+Nombre del proyecto: pelota animada.aep
+
+Archivos de origen recopilados en: 
+	C:\Users\Sena\Desktop\pelota animada carpeta
+
+Archivos de origen recopilados: Todo
+
+Comp. recopiladas:  
+	personajebalon
+	
+Número de archivos recopilados: 2
+
+Tamaño de los archivos recopilados: 520 KB
+
+Archivos de origen recopilados: 
+	C:\Users\Sena\Downloads\personajebalon.ai
+	C:\Users\Sena\Downloads\personajeejemplo.ai
+	
+Procesando plugins:
+	Classic 3D
+	
+Efectos utilizados: 2
+
+Efecto: 
+	
+Efecto: Control de capa
+	
+

@@ -1,0 +1,44 @@
+.bg-green-aqua{
+    background-color: #4DB889;
+}
+
+.bg-dark-blue{
+    background-color: #074173;
+}
+
+.fs-0{
+    font-size: 4em;
+    color: white;
+}
+.icono{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.anuncio{
+    align-items: center;
+}
+
+.bg-sombra{
+    background-color: #83dbb4;
+}
+
+.texto{
+    padding: 8px;
+    border-radius: 15px;
+}
+.py-6 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.dropstart .dropdown-toggle::before {
+    content: none;
+}   
+.bg-none {
+    background-color: transparent;
+    border: none;
+} 
+.bg-blue-dark {
+    background-color: #074173;
+}
+

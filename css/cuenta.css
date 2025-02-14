@@ -1,0 +1,32 @@
+.fs-0{
+    font-size: 4em;
+    color: white;
+}
+.icono{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.interior{
+    height: 350px;
+}
+.w-15 {
+    width: 15%;
+}
+
+.dropstart .dropdown-toggle::before {
+    content: none;
+}   
+.bg-none {
+    background-color: transparent;
+    border: none;
+} 
+.pb-6 {
+    padding-bottom: 100px;
+}
+.img-cover {
+    object-fit: cover;
+}
+.bg-blue-dark {
+    background-color: #074173;
+}

@@ -1,0 +1,106 @@
+.w-15 {
+    width: 15%;
+}
+
+.size {
+    width: 600px;
+    height: 600px;
+}
+.pt-6 {
+    padding-top: 130px;
+}
+.bg-gradient-circle {
+    background: radial-gradient(circle, #074173 1%, #1679AB 99%);
+}
+.bg-img {
+    background-image: url(../sources/Recurso\ 3.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.text-blue-aqua {
+    color: #139BAF;
+}
+.bg-blue-aqua {
+    background-color: #139BAF;
+}
+.mb-6 {
+    margin-bottom: 150px;
+}
+.fs-0 {
+    font-size: 70px;
+}
+.bg-green-aqua {
+    background-color: #4db889;
+}
+.text-blue-clear {
+    color: #5DEBD7;
+}
+.pt-7 {
+    padding-top: 200px;
+}
+.rounded-img {
+    border-radius: 80px;
+    object-fit: cover;  
+}
+.bg-blue {
+    background-color: #1679AB;
+}
+.bg-blue-clear {
+    background-color: #5DEBD7;
+}
+.bg-blue-dark {
+    background-color: #074173;
+}
+.text-green-aqua {
+    color: #4db889;
+}
+.p-6 {
+    padding-right: 55px;
+    padding-left: 55px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.w-md-75 {
+    width: 50%;
+}
+.bg-trainig {
+    background-image: url(../sources/construccion-centro-entrenamiento-futbol-individuales.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+    .w-md-75  { 
+        width: 75%;
+    }
+}
+@media (max-width: 767px) {
+    .w-md-75 {
+        width: 100%;
+    }
+}
+.w-25-media {
+    width: 25%;
+}
+@media (max-width: 576px) {
+    .w-25-media {
+        width: 80%;
+    }
+}
+.mb-7 {
+    margin-bottom: 200px;
+}
+.py-6 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.bg-white-opacity {
+    background-color: rgba(0, 0, 0, 0.815);
+}
+.dropstart .dropdown-toggle::before {
+    content: none;
+}
+.bg-none {
+    background-color: transparent;
+    border: none;
+}

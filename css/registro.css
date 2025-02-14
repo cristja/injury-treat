@@ -1,0 +1,33 @@
+body{
+    min-height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(22,121,171,1) 51%, rgba(7,65,115,1) 82%);
+    background-repeat: no-repeat;
+}
+.opacidad{
+    
+    height: 100vh;
+    background-color: black;
+    opacity: 50%;
+}
+.formulario{
+    background-color: transparent;
+    height: 50px;
+    color: white;
+    padding: 5px;
+}
+.pe-6 {
+    padding-right: 100px;
+}
+.bg-black-opacity {
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.548);
+}
+.w-md-media {
+    width: 50%;
+}
+@media (max-width: 768px) {
+    .w-md-media {
+        width: 100%;
+    }
+}
