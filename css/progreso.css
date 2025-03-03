@@ -31,6 +31,10 @@
     padding-top: 70px;
     padding-bottom: 70px;
 }
+.py-trofeo{
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
 .dropstart .dropdown-toggle::before {
     content: none;
 }   
