@@ -1,0 +1,19 @@
+.orange{
+    color: #F7931E;
+}
+
+.rectangulo{
+    border-radius: 10px;
+    width: 350px;
+    height: 43px;
+}
+
+.rectangulo1{
+    border-radius: 10px;
+    width: 350px;
+    height: 43px;
+}
+
+.rectangulo{
+    border: solid #F7931E;
+}
