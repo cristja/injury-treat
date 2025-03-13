@@ -55,3 +55,10 @@ body {
     border-radius: 20px;
     border: none;
 }   
+.balones{
+    background-image: url(../image/patronBalones-removebg-preview.png);
+    background-position: start;
+    background-size: 84%;
+    background-repeat: no-repeat;
+    
+}
