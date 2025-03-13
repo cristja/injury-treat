@@ -1,0 +1,13 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.fs-7 {
+    font-size: 200px;
+}
+.rounded-6 {
+    border-radius: 0px 150px 150px 0px;
+}
+.fs-8 {
+    font-size: 60px;
+}
