@@ -45,4 +45,10 @@
 .bg-blue-dark {
     background-color: #074173;
 }
-
+.mb-6 {
+    margin-bottom: 150px;
+}
+.mt-6 {
+    margin-top: 150px;
+    margin-bottom: 180px;
+}

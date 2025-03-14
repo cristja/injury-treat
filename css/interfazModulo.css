@@ -1,0 +1,64 @@
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+.derecha {
+    background-color: #16919B;
+    color: white;
+    height: 100vh;
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+}
+.barraNavegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.video-container {
+    background-color: black;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.atras {
+
+    font-size: 16px;
+    color: #6c757d;
+    text-decoration: none;
+    font-weight: bold;
+}
+.home {
+    font-size: 25px;
+    color: #6c757d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.modulo-titulo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #0C3E67;
+}
+.modulo-subtitulo {
+    font-size: 20px;
+    color: #0C3E67;
+}
+.btn-sig {
+    background-color: #A6F6D0;
+    color: #0C3E67;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+}   
+.balones{
+    background-image: url(../image/patronBalones-removebg-preview.png);
+    background-position: start;
+    background-size: 84%;
+    background-repeat: no-repeat;
+    
+}

@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.fs-7 {
+    font-size: 200px;
+}
+.rounded-6 {
+    border-radius: 0px 150px 150px 0px;
+}
+.fs-8 {
+    font-size: 60px;
+}
+.bg-button {
+    background-color: transparent;
+    border: solid #074173;
+}
+.text-dark-blue {
+    color: #074173;
+}
+.atras {
+
+    font-size: 16px;
+    color: #6c757d;
+    text-decoration: none;
+    font-weight: bold;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-right: auto;
+    margin-left: 0px; 
+}
