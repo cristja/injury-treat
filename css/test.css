@@ -1,0 +1,26 @@
+.orange{
+    color: #F7931E;
+}
+
+.rectangulo{
+    border-radius: 10px;
+    width: 350px;
+    height: 43px;
+    cursor: pointer;
+}
+
+.rectangulo1{
+    border-radius: 10px;
+    width: 350px;
+    height: 43px;
+    cursor: pointer;
+}
+
+.rectangulo{
+    border: solid #F7931E;
+}
+
+.btnv{
+    cursor: pointer;
+}
+
