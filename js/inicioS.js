@@ -1,27 +1,28 @@
-if(localStorage.getItem('activo') == 'true') {
+/* if(localStorage.getItem('activo') == 'true') {
     window.location = '../index.html'
-}
+} */
 
 const formregistro = document.querySelector('#formregistro');
 const inputusername = document.querySelector('#inputusername');
 const inputuserpass = document.querySelector('#inputuserpass');
 
-
+const user = JSON.parse(localStorage.getItem("user")) || [];
 
 
 function validarusuario(e) {
     e.preventDefault();
 
-    let usuariolocal = localStorage.getItem('user');
-    let passwordlocal = localStorage.getItem('password');
-    
-    if (usuariolocal === inputusername.value && passwordlocal === inputuserpass.value) {
-        localStorage.setItem('activo', true)
+    for (let index = 0; index < user.length; index++) {
+        
+    if (user[index].user === inputusername.value && user[index].password === inputuserpass.value) {
+        user[index].logged = true
+        localStorage.setItem("user", JSON.stringify(user))
         window.location.href = "../index.html";
+        return
     }
-    else {
-        alert('Datos Incorrectos')
     }
+    alert('Datos Incorrectos')
+    
     formregistro.reset()
 }
 

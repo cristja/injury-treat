@@ -1,7 +1,10 @@
 const encabezado = document.querySelector("#encabezado")
 
+const user = JSON.parse(localStorage.getItem("user"))
 
-if(localStorage.getItem('activo') == 'true'){
+for (let index = 0; index < user.length; index++) {
+  
+  if(user[index].logged === true){
     encabezado.innerHTML = `
     <a href=""><img  src="./sources/logooooooooooo-removebg-preview.png" class="img-fluid py-2" alt=""></a>
     <div id="menu" class="dropstart py-1">
@@ -16,8 +19,11 @@ if(localStorage.getItem('activo') == 'true'){
                         </div>
     `
 }
+}
+
+
 
 
 function iniciar (){
-    window.location = "./pages/inicioS.html"
+    window.location.href = "./pages/inicioS.html"
 }

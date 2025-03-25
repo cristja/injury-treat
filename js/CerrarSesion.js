@@ -1,3 +1,12 @@
-localStorage.setItem('activo', false)
+const user = JSON.parse(localStorage.getItem("user"))
 
-window.location = '../index.html'
+for (let index = 0; index < user.length; index++) {
+    
+    if(user[index].logged === true) {
+        user[index].logged = false
+        localStorage.setItem("user", JSON.stringify(user))
+    }
+    window.location = '../index.html'
+    
+}
+
