@@ -3,9 +3,10 @@ if(localStorage.getItem('activo') == 'true') {
 }
 
 const formregistro = document.querySelector('#formregistro');
-const inputusername = document.querySelector('#nombre');
-const inputuserpass = document.querySelector('#contraseña');
-const enviar = document.querySelector("#enviar")
+const inputusername = document.querySelector('#inputusername');
+const inputuserpass = document.querySelector('#inputuserpass');
+
+
 
 
 function validarusuario(e) {
@@ -16,13 +17,12 @@ function validarusuario(e) {
     
     if (usuariolocal === inputusername.value && passwordlocal === inputuserpass.value) {
         localStorage.setItem('activo', true)
-        window.location.href = '../index.html'
+        window.location.href = "../index.html";
     }
     else {
         alert('Datos Incorrectos')
     }
+    formregistro.reset()
 }
 
-enviar.addEventListener('submit', validarusuario);
-
-console.log(validarusuario)
+formregistro.addEventListener('submit', validarusuario);

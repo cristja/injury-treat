@@ -10,21 +10,23 @@
 </head>
 <body class="d-flex align-items-center position-relative">
     
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-6 d-none d-md-block">
                 <div class="d-flex justify-content-center">
-                    <img class="w-50" src="../sources/Recurso 11.svg" alt=""> 
+                    <img class="w-30" src="../sources/Recurso 11.svg" alt=""> 
                 </div>            
             </div>
             <div class="col-12 col-md-6">
                 <div id="form" class="d-flex flex-column align-items-center justify-content-center h-100">
                     <h1 class="text-white">Registrarse</h1>
-                   <input id="nombre" type="email" class="border w-75 px-4 my-4 formulario rounded-5" placeholder="Crea nombre de usuario" aria-label="First name">
-                   <input id="contraseña" type="password" class="border w-75 px-4 mb-4 formulario rounded-5" placeholder="Crear contraseña" aria-label="Last name">
-                   <input type="date" class="border w-75 px-4 mb-4 formulario rounded-5" placeholder="Fecha de nacimiento" aria-label="date">
-                   <h6 class="text-white">¿Ya tienes cuenta? <a class="text-light " href="../pages/inicioS.html">Iniciar sesion</a>  </h6> 
-                   <button id="enviar" class="w-75 formulario border-light rounded-5 mt-4" type="submit">CREAR CUENTA</button> 
+                    <form id="formregistro" class="w-75 text-center">
+                        <input type="text" id="inputusername" class="border w-75 px-4 my-4 formulario rounded-5" placeholder="Crea nombre de usuario">
+                        <input type="password" id="inputuserpass" class="border w-75 px-4 mb-4 formulario rounded-5" placeholder="Crear contraseña">
+                        <input type="date" class="border w-75 px-4 mb-4 formulario rounded-5" placeholder="Fecha de nacimiento">
+                        <h6 class="text-white">¿Ya tienes cuenta? <a class="text-light " href="./inicioS.html">Iniciar sesion</a>  </h6>
+                        <button class="w-75 formulario border-light rounded-5 mt-4" type="submit">CREAR CUENTA</button> 
+                     </form> 
                 </div>
                 
             </div>

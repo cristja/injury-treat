@@ -2,23 +2,24 @@ if(localStorage.getItem('activo' == 'true')) {
     window.location = '../index.html'
 }
 
-const formregistro = document.querySelector('#form');
-const inputusername = document.querySelector('#nombre');
-const inputuserpass = document.querySelector('#contraseña');
-const reset = document.querySelector(".formulario")
-const enviar = document.querySelector("#enviar")
+const formregistro = document.querySelector('#formregistro');
+const inputusername = document.querySelector('#inputusername');
+const inputuserpass = document.querySelector('#inputuserpass');
+
 
 function registrar(e) {
     e.preventDefault();
     localStorage.setItem('user', inputusername.value);
     localStorage.setItem('password', (inputuserpass.value));
+    localStorage.setItem('activo', false)
 
     const cajitamensaje = document.createElement('p');
     cajitamensaje.classList.add("mensaje")
-    cajitamensaje.innerHTML = `Usuario Registrado, ya puedes <a class="text-white"  href="./inicioS.html">Iniciar Sesion </a>
+    cajitamensaje.innerHTML = `Usuario Registrado, ya puedes <a class="text-white" href="./inicioS.html">Iniciar Sesion </a>
     `
 
     formregistro.appendChild(cajitamensaje)
+    formregistro.reset()
 }
 
-enviar.addEventListener('click', registrar);
+formregistro.addEventListener('submit', registrar);
