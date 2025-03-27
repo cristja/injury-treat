@@ -10,7 +10,7 @@ const enviar = document.querySelector("#enviar")
 
 function registrar(e) {
     e.preventDefault();
-    localStorage.setItem('user', inputusername.value);
+    localStorage.setItem('user', JSON.stringify(inputusername.value));
     localStorage.setItem('password', (inputuserpass.value));
 
     const cajitamensaje = document.createElement('p');
