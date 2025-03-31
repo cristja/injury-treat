@@ -20,6 +20,16 @@ function registrar(e) {
 
     const users = JSON.parse(localStorage.getItem("user")) || [];
 
+    for (let i = 0; i < users.length; i++) {
+        if (users[i].user === user.user || users[i].password === user.password) {
+            alert("El usuario o contraseña ya existe")
+            return
+        }
+        
+    }
+
+
+
     users.push(user)
 
     localStorage.setItem("user", JSON.stringify(users))

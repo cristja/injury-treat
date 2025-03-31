@@ -27,3 +27,16 @@ for (let index = 0; index < user.length; index++) {
 function iniciar (){
     window.location.href = "./pages/inicioS.html"
 }
+
+function ver() {
+  for (let i = 0; i < user.length; i++) {
+    if(user[i].logged === true){
+      window.location.href = "./pages/MiCuenta.html"
+      return
+    }
+    else {
+      window.location.href = "./pages/inicioS.html"
+    }
+    
+  }
+}
