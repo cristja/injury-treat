@@ -14,6 +14,7 @@ for (let index = 0; index < user.length; index++) {
                             <ul class="dropdown-menu">
                               <li><a class="dropdown-item" href="./pages/MiCuenta.html">Mi cuenta</a></li>
                               <li><a class="dropdown-item" href="./pages/progreso.html">Progreso</a></li>
+                              <li><a class="dropdown-item" href="./pages/modulos.html">Modulos</a></li>
                               <li><a class="dropdown-item" href="./pages/CerrarSesion.html">Cerrar sesión</a></li>
                             </ul>
                         </div>

@@ -1,5 +1,7 @@
+
 function continuar() {
     window.location.href = "./interfazModulo.html"
+    localStorage.setItem("last-link", window.location.pathname)
 }
 
 const porcentaje = document.querySelector("#porcentaje")
