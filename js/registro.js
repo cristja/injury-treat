@@ -11,6 +11,7 @@ function registrar(e) {
     e.preventDefault();
 
     let user = {
+        avatar: "../sources/profile_circle_icon_244573.webp",
         user: inputusername.value,
         password: inputuserpass.value,
         logged: false,
@@ -34,12 +35,7 @@ function registrar(e) {
 
     localStorage.setItem("user", JSON.stringify(users))
 
-    const cajitamensaje = document.createElement('p');
-    cajitamensaje.classList.add("mensaje")
-    cajitamensaje.innerHTML = `Usuario Registrado, ya puedes <a class="text-white" href="./inicioS.html">Iniciar Sesion </a>
-    `
-
-    formregistro.appendChild(cajitamensaje)
+    window.location = "./inicioS.html"
     formregistro.reset()
 }
 

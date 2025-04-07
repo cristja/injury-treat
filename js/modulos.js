@@ -1,8 +1,10 @@
+const a_head = document.querySelector(".a-head")
+const nombre = document.querySelector("#nombre")
+
 function convertirAMayusculas(cadena) {
     return cadena.toUpperCase();
 }
 
-const nombre = document.querySelector("#nombre")
 
 for (let index = 0; index < user.length; index++) {
     

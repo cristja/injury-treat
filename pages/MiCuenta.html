@@ -16,8 +16,8 @@
                 <div class="col">
                     <div class="d-flex justify-content-between align-items-center">
                       <a href="../index.html"><img  src="../sources/logooooooooooo-removebg-preview.png" class="img-fluid py-2" alt=""></a>
-                            <div class="dropstart py-1">
-                            <button class="dropdown-toggle bg-none btn-sm"  data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="dropstart py-1 text-end">
+                            <button class="dropdown-toggle bg-none btn-sm a-head w-25"  data-bs-toggle="dropdown" aria-expanded="false">
                               <i class="bi bi-person-circle text-white fs-1"></i>
                             </button>
                           
@@ -39,8 +39,8 @@
         <div class="row ">
             <div class="col">
                 <div class="bg-green-aqua d-flex rounded-6 align-items-center ">
-                    <div class="">
-                        <i class="bi bi-circle-fill fs-7 text-white px-5"></i>
+                    <div class="img-a">
+
                     </div>
                     <div>
                         <h4 class="text-white">Bienvenido</h4>
@@ -58,13 +58,14 @@
                       </p>
                       <div class="collapse w-50 " id="collapseExample1">
                         <div class="card card-body informacion mb-3 text-start bg-body-secondary">
-                            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-dark" href="">Cambiar foto</a>
-                            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-dark" href="">Información personal</a>
+                            <button type="button" class="text-start bg-none-hover" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Cambiar avatar</button>
+                            <button type="button" class="text-start bg-none-hover" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Cambiar nombre de usuario</button>
+                            <button type="button" class="text-start bg-none-hover" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Cambiar contraseña</button>
                             <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-dark" href="./CerrarSesion.html">Cerra sesión</a>
                         </div>
                       </div>
                       <p class="d-inline-flex gap-1 w-100 justify-content-center">     
-                        <button class="text-dark-blue bg-button py-2 fs-3 px-5 rounded-5 w-50" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                        <button class="text-dark-blue bg-button py-2 fs-3 rounded-5 w-50" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
                           Certificados
                         </button>
                       </p>
@@ -74,7 +75,7 @@
                         </div>
                       </div>
                       <p class="d-inline-flex gap-1 w-100 justify-content-center">     
-                        <button class=" bg-button text-dark-blue py-2 fs-3 px-5 rounded-5 w-50" type="button" >
+                        <button class=" bg-button text-dark-blue py-2 fs-3 rounded-5 w-50" type="button" >
                           <a class="nav-link w-100" href="./modulos.html">Modulos</a>
                         </button>
                       </p>
@@ -83,6 +84,64 @@
         </div>
     </div>
     </section>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Cambiar datos</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="formulario">
+                    <p class="ms-2">Nuevo usuario</p>
+                    <input type="text" id="inputusernameNew" class="border w-100 px-4 my-1 formulario rounded-5" placeholder="Cambiar nombre de usuario">
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+              <button id="save" type="button" class="btn btn-primary">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Cambiar datos</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form >
+                    <p class="mt-4 ms-2">Nueva contraseña</p>
+                    <input type="password" id="inputuserpassNew" class="border w-100 px-4 mb-4 formulario rounded-5" placeholder="Cambiar contraseña">
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+              <button id="save1" type="button" class="btn btn-primary">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Cambiar avatar</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <button type="button" class="btn btn-avatar" data-bs-toggle="button"><img src="../sources/copia 1.png" alt="" class="w-50 btn-avatar" ></button>
+                <button type="button" class="btn btn-avatar" data-bs-toggle="button"><img src="../sources/copia2.png" alt="" class="w-50 btn-avatar"></button>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+              <button id="save2" onclick="" type="button" class="btn btn-primary">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <footer class="bg-blue-dark">
         <div class="container">
             <div class="row">

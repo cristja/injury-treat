@@ -34,3 +34,17 @@
     margin-right: auto;
     margin-left: 0px; 
 }
+.formulario{
+    background-color: transparent;
+    height: 50px;
+    color: black;
+    padding: 5px;
+}
+.bg-none-hover {
+    border: none;
+    background-color: transparent;
+}
+.bg-none-hover:hover {
+    background-color: #0741732a;
+    border-radius: 5px;
+}
