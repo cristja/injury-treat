@@ -23,4 +23,7 @@
 .btnv{
     cursor: pointer;
 }
+input[type="radio"]:checked {
+    background-color: #F7931E;
+}
 

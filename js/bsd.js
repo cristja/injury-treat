@@ -10,14 +10,14 @@ let modulos = [
     {
         titulo: "MÓDULO 2",
         img: "https://cdn.futbollab.com/storage/blog/seo/blog---prevencion-de-lesiones-de-isquiotibiales-2.png",
-        descripcion: "En este segundo módulo podras encontrar: clasificación, causales y tipos de lesiones",
+        descripcion: "En este segundo módulo podras encontrar: clasificación, causales y tipos de lesiones que pueden haber en el futbol",
         estado: ["Pendiente", "opacity-50"], 
         color: "text-secondary"
     },
     {
         titulo: "MÓDULO 3",
         img: "https://www.fcbarcelona.com/fcbarcelona/photo/2020/10/22/9f440cf5-48b6-405b-a6bb-1ff8dfa0fc19/foto2.Alimetacio-esport.jpg",
-        descripcion: "En este módulo tendremos la importancia de la preparación, alimentación y implementación a la hora de desempeñarte en una cancha",
+        descripcion: "En este módulo podremos observar cual es la importancia de la preparación, la alimentación y la implementación a la hora de desempeñarte en una cancha de futbol ",
         estado: ["Pendiente", "opacity-50"],
         color: "text-secondary"
     },
