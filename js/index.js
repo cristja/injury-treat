@@ -1,7 +1,7 @@
 const encabezado = document.querySelector("#encabezado")
 const boton = document.querySelector("#boton")
 const bienvenida = document.querySelector("#bienvenida")
-
+const nombre = document.querySelector("#nombre")
 
 const user = JSON.parse(localStorage.getItem("user"))
 
@@ -12,6 +12,7 @@ function convertirAMayusculas(cadena) {
 for (let index = 0; index < user.length; index++) {
   
   if(user[index].logged === true){
+    nombre.textContent = `${convertirAMayusculas(user[index].user)}`
     encabezado.innerHTML = `
     <a href=""><img  src="./sources/logooooooooooo-removebg-preview.png" class="img-fluid py-2" alt=""></a>
     <div id="menu" class="dropstart py-1 d-flex align-items-center gap-4">

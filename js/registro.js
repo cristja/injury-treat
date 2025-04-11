@@ -11,7 +11,7 @@ function registrar(e) {
     e.preventDefault();
 
     let user = {
-        avatar: "../sources/profile_circle_icon_244573.webp",
+        avatar: "../sources/login.png",
         user: inputusername.value,
         password: inputuserpass.value,
         logged: false,

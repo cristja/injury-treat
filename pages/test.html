@@ -30,30 +30,161 @@
     <div class="container pt-5">
         <p class="orange fs-3">TEST DEL</p>
         <p class="fs-2">MÓDULO 01</p>
-        <p class="fs-3">Lorem ipsum dolor sit, amet consectetur?</p>
     </div>
     
 
-    <div class="container">
-        <div class="row ">
-            <div class="col-6 p-1">
-                <div class="rectangulo fs-4 bg-white w-100 ps-4">Lorem ipsum</div>
-            </div>
-            <div class="col-6 p-1">
-                <div class="rectangulo fs-4 bg-white w-100 ps-4">Lorem ipsum</div>
-            </div>
-            <div class="col-6 p-1">
-                <div class="rectangulo1 fs-4 bg-success w-100 ps-4 text-white">Lorem ipsum</div>
-            </div>
-            <div class="col-6 p-1">
-                <div class="rectangulo fs-4 bg-white w-100 ps-4">Lorem ipsum</div>
+    <div class="container mt-5">
+        <div id="questionCarousel" class="carousel slide" data-bs-interval="false">
+            <div class="carousel-inner">
+                <!-- Pregunta 1 -->
+                <div class="carousel-item active ms-1">
+                    <h5>1. ¿Cómo puden clasificarse las lesiones?</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" value="correcta" id="q1a1">
+                        <label class="form-check-label" for="q1a1">Agudas, crónicas y leves</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" value="incorrecta" id="q1a2">
+                        <label class="form-check-label" for="q1a2">Directa, indirecta y secundaria</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" value="incorrecta" id="q1a3">
+                        <label class="form-check-label" for="q1a3">Suaves, medianas, duras</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" value="incorrecta" id="q1a4">
+                        <label class="form-check-label" for="q1a4">Hidratación, alimentación y implementación</label>
+                    </div>
+                    <div class="mt-3">
+                        <button class="btn btn-warning" data-bs-target="#questionCarousel" data-bs-slide="next">Siguiente</button>
+                    </div>
+                </div>
+                
+                <!-- Pregunta 2 -->
+                <div class="carousel-item ms-1">
+                    <h5>2. ¿Qué tipo de protección es necesaria?</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q2" value="incorrecta" id="q2a1">
+                        <label class="form-check-label" for="q2a1">Pantaloneta,  rodilleras</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q2" value="incorrecta" id="q2a2">
+                        <label class="form-check-label" for="q2a2">Coderas, buen físico</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q2" value="incorrecta" id="q2a3">
+                        <label class="form-check-label" for="q2a3">Balon, camisa</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q2" value="correcta" id="q2a4">
+                        <label class="form-check-label" for="q2a4">Canilleras, guayos</label>
+                    </div>
+                    <div class="mt-3">
+                        <button class="btn btn-secondary" data-bs-target="#questionCarousel" data-bs-slide="prev">Anterior</button>
+                        <button class="btn btn-warning" data-bs-target="#questionCarousel" data-bs-slide="next">Siguiente</button>
+                    </div>
+                </div>
+                
+                <!-- Pregunta 3 -->
+                <div class="carousel-item ms-1">
+                    <h5>3. ¿Qúe tipos de lesiones pueden ocurrir en el fútbol?</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q3" value="incorrecta" id="q3a1">
+                        <label class="form-check-label" for="q3a1">Roturas, fracturas, dolor de cabeza y trauma en el área</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q3" value="correcta" id="q3a2">
+                        <label class="form-check-label" for="q3a2">Esguinces, desgarros, luxaciones y roturas</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q3" value="incorrecta" id="q3a3">
+                        <label class="form-check-label" for="q3a3">Quiebres, dolor de espaplda y desgarros</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q3" value="incorrecta" id="q3a4">
+                        <label class="form-check-label" for="q3a4">Agudas, crónicas, leves y graves</label>
+                    </div>
+                    <div class="mt-3">
+                        <button class="btn btn-secondary" data-bs-target="#questionCarousel" data-bs-slide="prev">Anterior</button>
+                        <button class="btn btn-warning" data-bs-target="#questionCarousel" data-bs-slide="next">Siguiente</button>
+                    </div>
+                </div>
+                
+                <!-- Pregunta 4 -->
+                <div class="carousel-item ms-1">
+                    <h5>4. ¿Cuándo debes buscar ayuda médica?</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q4" value="incorrecta" id="q4a1">
+                        <label class="form-check-label" for="q4a1">No duele, puedes moverla, no hay hinchazón</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q4" value="incorrecta" id="q4a2">
+                        <label class="form-check-label" for="q4a2">Después de varias semanas y que la parte afectada este roja</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q4" value="correcta" id="q4a3">
+                        <label class="form-check-label" for="q4a3">Duele mucho, hay hinchazón, el dolor persiste más de una semana</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q4" value="incorrecta" id="q4a4">
+                        <label class="form-check-label" for="q4a4">Sangra, está morado, no puedes apoyar la parte lesionada</label>
+                    </div>
+                    <div class="mt-3">
+                        <button class="btn btn-secondary" data-bs-target="#questionCarousel" data-bs-slide="prev">Anterior</button>
+                        <button class="btn btn-warning" data-bs-target="#questionCarousel" data-bs-slide="next">Siguiente</button>
+                    </div>
+                </div>
+                
+                <!-- Pregunta 5 -->
+                <div class="carousel-item ms-1">
+                    <h5>5. ¿Cuáles alimentos son ricos en proteínas y ayudan a nuestro cuerpo?</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q5" value="incorrecta" id="q5a1">
+                        <label class="form-check-label" for="q5a1">Arroz, carne, banano</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q5" value="incorrecta" id="q5a2">
+                        <label class="form-check-label" for="q5a2">Sopas, yuca, quesos y aguacate</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q5" value="incorrecta" id="q5a3">
+                        <label class="form-check-label" for="q5a3">Hamburguesas, perros y fritos</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q5" value="correcta" id="q5a4">
+                        <label class="form-check-label" for="q5a4">Pollo, pescado y  legumbres</label>
+                    </div>
+                    <div class="mt-3">
+                        <button class="btn btn-secondary" data-bs-target="#questionCarousel" data-bs-slide="prev">Anterior</button>
+                        <button class="btn btn-outline-warning" type="submit" onclick="mostrar()">Enviar respuestas</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    
+    <div class="modal fade" id="resultadoModal" tabindex="-1" role="dialog" aria-labelledby="resultadoModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="resultadoModalLabel">Resultado</h5>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    
+                </div>
+                <div class="modal-footer">
+                    <button id="Cerrar" type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <script src="../js/bsd.js"></script>
+    <script src="../js/test.js"></script>
     <script src="../js/autenticacion.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
