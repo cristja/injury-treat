@@ -5,10 +5,9 @@ body {
 .derecha {
     background-color: #16919B;
     color: white;
-    height: 100vh;
+    height: 120vh;
     text-align: center;
     padding: 40px 20px;
-    margin-bottom: 20px;
 }
 .barraNavegacion {
     display: flex;
@@ -16,14 +15,7 @@ body {
     align-items: center;
 }
 
-.video-container {
-    background-color: black;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-}
+
 .atras {
 
     font-size: 16px;

@@ -39,3 +39,11 @@ function link() {
 }
 
 tarjet.addEventListener("click", link)
+
+const volver = document.querySelector("#volver")
+
+function link_c() {
+    localStorage.setItem("last-link", window.location.pathname)
+}
+
+volver.addEventListener("click", link_c)

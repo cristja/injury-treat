@@ -8,11 +8,14 @@ const avatars = document.querySelectorAll(".btn-avatar")
 const avatar = document.querySelector(".img-a")
 const guardar2 = document.querySelector("#save2")
 const a_head = document.querySelector(".a-head")
+let link = document.querySelector("#volver")
+let last_link = localStorage.getItem("last-link")
+link.href = last_link
 
 for (let i = 0; i < user.length; i++) {
     if(user[i].logged === true) {
-        avatar.innerHTML = `<img class="img-fluid w-100" src="${user[i].avatar}" alt="">`
-        a_head.innerHTML = `<img class="img-fluid w-75" src="${user[i].avatar}" alt="">`
+        avatar.innerHTML = `<img class=" w-75" src="${user[i].avatar}" alt="">`
+        a_head.innerHTML = `<img class="img-fluid w-25" src="${user[i].avatar}" alt="">`
     }
     
 }

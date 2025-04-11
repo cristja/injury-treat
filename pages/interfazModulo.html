@@ -29,14 +29,19 @@
                 </div>
                 <h2 class="mt-3 modulo-titulo">MÓDULO 01</h2>
                 <p class="modulo-subtitulo">Introducción a la prevención de lesiones.</p>
-                <div class="video-container w-100">
-                    <p>Reproductor de video</p>
+                <div class="">
+                    <video id="video" class="w-100" controls>
+                        <source  src="../sources/personajebalon-Compressed-with-FlexClip.webm" type="video/webm">
+                    </video>
+                    
                 </div>
+                <p class="d-block d-md-none mt-3">Mira el video para desbloquear el siguiente paso!!</p>
+                <button class="btn btn-sig d-block d-md-none">Siguiente</button>
             </div>
             <!-- Barra lateral -->
-            <div class="col-md-3 derecha d-flex flex-column justify-content-end balones">
+            <div class="col-md-3 derecha d-md-flex flex-column justify-content-end balones d-none">
                 <p>Mira el video para desbloquear el siguiente paso!!</p>
-                <button class="btn btn-sig">Siguiente</button>
+                <button id="boton" class="btn btn-sig" disabled>Siguiente</button>
             </div>
         </div>
     </div>

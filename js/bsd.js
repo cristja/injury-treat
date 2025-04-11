@@ -4,7 +4,23 @@ let modulos = [
         img: "https://assets.goal.com/images/v3/blt904c4fe3a0126f9d/Goal_HIC_-_LinkedIn_(15).jpg?auto=webp&format=pjpg&width=3840&quality=60",
         descripcion: "Introducción a este curso y a todo el tema relacionado con las lesiones deportivas en el fútbol",
         estado: ["En progreso"],
-        color: "text-warning"
+        color: "text-warning",
+        preg:[
+            {
+                preg1: "",
+                res: [
+                    "",""
+                ]
+            },
+            {
+                preg2: "",
+                res: [
+                    "", "", "",""
+                ]
+            }
+
+        ],
+    
 
     },
     {
