@@ -11,11 +11,21 @@ const a_head = document.querySelector(".a-head")
 let link = document.querySelector("#volver")
 let last_link = localStorage.getItem("last-link")
 link.href = last_link
+let certificado = document.querySelector("#certificado")
+
+function link_c() {
+    localStorage.setItem("last-link", window.location.pathname)
+}
+
+certificado.addEventListener("click", link_c)
 
 for (let i = 0; i < user.length; i++) {
     if(user[i].logged === true) {
-        avatar.innerHTML = `<img class=" w-75" src="${user[i].avatar}" alt="">`
-        a_head.innerHTML = `<img class="img-fluid w-25" src="${user[i].avatar}" alt="">`
+        avatar.innerHTML = `<img class=" w-50" src="${user[i].avatar}" alt="">`
+        a_head.innerHTML = `<img class="img-fluid w-25 text-white" src="${user[i].avatar}" alt="">`
+        if (user[i].certificado == true) {
+            certificado.innerHTML = `<a href="./interfazcertificado.html">Prevencion-de-Lesiones.pdf</a>`
+        }
     }
     
 }

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(207, 207, 207);
+            text-align: center;
+        }
+
+         .container{
+            position: relative;
+            padding: 1rem;
+            width: 1000px;
+            height: 600px;
+            margin: auto;
+            margin-top: 100px;
+         }
+         .certificate{
+            position: relative;
+            width: 100%;
+            border: 3px solid rgb(4, 187, 86);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height:550px;
+            background-image: url(../sources/certificado_Mesa\ de\ trabajo\ 1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: 0px 0px 10px rgb(4, 187, 86);
+         }
+         #descargarPDF {
+            background-color: #074173;
+            margin-top: 50px;
+            padding: 30px;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            color: white;
+            box-shadow: 0px 4px 6px #074173;
+         }
+         #descargarPDF:hover {
+            background-color: #074173b4;
+         }
+         .back {
+            text-align: start;
+            margin-left: 60px;
+            margin-top: 50px;
+            font-size: 20px;
+        }
+        a {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="back">
+        <a id="volver" href="" class="atras ms-5"><i class="bi bi-chevron-left"></i> Volver</a>
+    </div>
+    
+    <div class="container">
+
+        <div id="miDiv" class="certificate">
+            <h1>Diploma de certificación</h1>
+            <h1 id="nombre"></h1>
+            <p>Demostró sus conocimientos en</p>
+            <h2>La prevención de lesiones en el futbol</h2>
+        </div>
+
+    </div>
+    <button id="descargarPDF">Descargar PDF</button>
+
+    <script>
+         document.getElementById('descargarPDF').addEventListener('click', () => {
+            const element = document.getElementById('miDiv');
+            const elementWidth = element.offsetWidth;
+            const elementHeight = element.offsetHeight;
+            const pxToInch = 1 / 96;
+            const pdfWidth = elementWidth * pxToInch;
+            const pdfHeight = elementHeight * pxToInch;
+            const opt = {
+                margin: 0,
+                filename: 'miDocumento.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                // For landscape, swap width and height in format and set orientation to landscape
+                jsPDF: { unit: 'in', format: [pdfHeight, pdfWidth], orientation: 'landscape' }
+            };
+            html2pdf().set(opt).from(element).save();
+        });
+    </script>
+
+    <script src="../js/interfazcertificado.js"></script>
+</body>
+
+</html>

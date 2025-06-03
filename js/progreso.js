@@ -1,12 +1,31 @@
 
 function continuar() {
-    window.location.href = "./interfazModulo.html"
+    
     localStorage.setItem("last-link", window.location.pathname)
+    for (let i = 0; i < user.length; i++) {
+        if (user[i].progreso == 0) {
+            window.location.href = "./interfazModulo.html"
+        }
+        if (user[i].progreso == 25) {
+            window.location.href = "./interfazModulo2.html"
+        }
+        if (user[i].progreso == 50) {
+            window.location.href = "./interfazModulo3.html"
+        }
+        if (user[i].progreso == 75) {
+            window.location.href = "./interfazModulo4.html"
+        }
+        if (user[i].progreso == 100) {
+            window.location.href = "./interfazcertificado.html"
+        }
+    }
 }
 
 const porcentaje = document.querySelector("#porcentaje")
 const nombre = document.querySelector("#nombre")
 const a_head = document.querySelector(".a-head")
+const prog = document.querySelector(".prog")
+const btn = document.querySelector("#btn")
 
 function convertirAMayusculas(cadena) {
     return cadena.toUpperCase();
@@ -23,16 +42,18 @@ for (let index = 0; index < user.length; index++) {
         const modulo3 = document.querySelector("#modulo3")
         const modulo4 = document.querySelector("#modulo4")
         const modulo5 = document.querySelector("#modulo5")
-        if (user[index].progreso >= 20) {
+        if (user[index].progreso >= 25) {
             modulo1.parentNode.classList.add("bg-blue-dark")
             modulo1.parentNode.classList.remove("bg-light")
             modulo1.classList.add("text-white")
             const check = document.createElement("i")
             check.classList.add("bi" , "bi-check2-circle", "text-success", "fs-3")
             modulo1.appendChild(check)
+            prog.innerHTML = "Deseas continuar?"
+            btn.innerHTML = "Continuar proceso"
             }
         
-        if (user[index].progreso >= 40) {
+        if (user[index].progreso >= 50) {
             modulo2.parentNode.classList.add("bg-blue-dark")
             modulo2.parentNode.classList.remove("bg-light")
             modulo2.classList.add("text-white")
@@ -40,7 +61,7 @@ for (let index = 0; index < user.length; index++) {
             check.classList.add("bi" , "bi-check2-circle", "text-success", "fs-3")
             modulo2.appendChild(check)
             }
-        if (user[index].progreso >= 60) {
+        if (user[index].progreso >= 75) {
             modulo3.parentNode.classList.add("bg-blue-dark")
             modulo3.parentNode.classList.remove("bg-light")
             modulo3.classList.add("text-white")
@@ -49,7 +70,7 @@ for (let index = 0; index < user.length; index++) {
             modulo3.appendChild(check)
 
             }
-            if (user[index].progreso >= 80) {
+            if (user[index].progreso >= 100) {
                 modulo4.parentNode.classList.add("bg-blue-dark")
                 modulo4.parentNode.classList.remove("bg-light")
                 modulo4.classList.add("text-white")
@@ -57,10 +78,12 @@ for (let index = 0; index < user.length; index++) {
                 check.classList.add("bi" , "bi-check2-circle", "text-success", "fs-3")
                 modulo4.appendChild(check)
             }
-            if (user[index].progreso >= 100) {
+            if (user[index].certificado == true) {
                 modulo5.parentNode.classList.add("bg-blue-dark")
                 modulo5.parentNode.classList.remove("bg-light")
                 modulo5.classList.add("text-white")
+                let opacity = modulo5.parentNode
+                opacity.classList.add("opacity-100")
                 const check = document.createElement("i")
                 check.classList.add("bi" , "bi-check2-circle", "text-success", "fs-3")
                 modulo5.appendChild(check) 

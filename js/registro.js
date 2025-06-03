@@ -12,6 +12,7 @@ function registrar(e) {
 
     let user = {
         avatar: "../sources/login.png",
+        nombrecompleto: "",
         user: inputusername.value,
         password: inputuserpass.value,
         logged: false,

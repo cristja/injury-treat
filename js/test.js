@@ -20,7 +20,7 @@ function mostrar() {
             modalBody.innerText = '¡Buen trabajo! Has completado el moduló 1 con exito, haz desbloqueado el moduló 2.';
             for (let i = 0; i < user.length; i++) {
                 if (user[i].logged === true) {
-                    user[i].progreso = 20
+                    user[i].progreso = 25
                     localStorage.setItem("user", JSON.stringify(user))
                 }
                 
