@@ -16,7 +16,7 @@ function continuar() {
             window.location.href = "./interfazModulo4.html"
         }
         if (user[i].progreso == 100) {
-            window.location.href = "./interfazcertificado.html"
+            window.location.href = "./index.html"
         }
     }
 }
@@ -26,6 +26,7 @@ const nombre = document.querySelector("#nombre")
 const a_head = document.querySelector(".a-head")
 const prog = document.querySelector(".prog")
 const btn = document.querySelector("#btn")
+const prog1 = document.querySelector(".prog1")
 
 function convertirAMayusculas(cadena) {
     return cadena.toUpperCase();
@@ -77,6 +78,9 @@ for (let index = 0; index < user.length; index++) {
                 const check = document.createElement("i")
                 check.classList.add("bi" , "bi-check2-circle", "text-success", "fs-3")
                 modulo4.appendChild(check)
+                prog1.innerHTML = ""
+                prog.innerHTML = "Haz finalizado con éxito este curso"
+                btn.innerHTML = "Volver al inicio"
             }
             if (user[index].certificado == true) {
                 modulo5.parentNode.classList.add("bg-blue-dark")

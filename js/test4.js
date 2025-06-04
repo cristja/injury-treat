@@ -33,7 +33,7 @@ function mostrar() {
         cerrar.addEventListener("click", function () {
             $('#resultadoModal').modal('hide');
             if(contadorI >= 3) {
-                window.location = "./interfazModulo.html"
+                window.location = "./interfazModulo4.html"
             }
             else {
                 window.location = "./modulos.html"

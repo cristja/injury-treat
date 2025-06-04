@@ -11,7 +11,7 @@ function registrar(e) {
     e.preventDefault();
 
     let user = {
-        avatar: "../sources/login.png",
+        avatar: "http://127.0.0.1:5500/sources/login.png",
         nombrecompleto: "",
         user: inputusername.value,
         password: inputuserpass.value,
