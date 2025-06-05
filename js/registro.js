@@ -16,7 +16,7 @@ function registrar(e) {
         user: inputusername.value,
         password: inputuserpass.value,
         logged: false,
-        progreso: 100,
+        progreso: 0,
         certificado: false,
     }
 
