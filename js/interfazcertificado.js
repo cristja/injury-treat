@@ -7,13 +7,7 @@ link.href = last_link
 
 for (let index = 0; index < user.length; index++) {
   if(user[index].logged === true){
-    if (user[index].nombrecompleto == "") {
-        window.location.href = "./autenticacion.html"  
-    }
-    else{
         nombre.innerHTML = user[index].nombrecompleto
-    }
 }
-
 }
 

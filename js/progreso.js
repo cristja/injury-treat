@@ -16,7 +16,7 @@ function continuar() {
             window.location.href = "./interfazModulo4.html"
         }
         if (user[i].progreso == 100) {
-            window.location.href = "./index.html"
+            window.location.href = "../index.html"
         }
     }
 }

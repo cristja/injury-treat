@@ -60,8 +60,15 @@ for (let index = 0; index < user.length; index++) {
             certificacion.color = "text-warning"
 
             function link5() {
-                window.location.href = "./interfazcertificado.html"
                 localStorage.setItem("last-link", window.location.pathname)
+                if (user[index].nombrecompleto == "unknown") {
+                    window.location.href = "./autenticacion.html"
+                }
+                else{
+                    window.location.href = "./interfazcertificado.html"
+                }
+                
+                
             }
             }
         if (user[index].certificado == true) {

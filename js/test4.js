@@ -14,7 +14,7 @@ function mostrar() {
     });
 
     const modalBody = document.getElementById('modalBody');
-        if (contadorI >= 3) {
+        if (contadorI >= 4) {
             modalBody.innerText = `Haz respondido ${contadorI} preguntas incorrectas. No has pasado el modulo. Debes repetirlo.`;
         } else {
             modalBody.innerText = '¡Buen trabajo! Has completado el moduló 4 con exito, haz pasado a la fase final a continuacion podras descargar tu certificado.';
@@ -32,7 +32,7 @@ function mostrar() {
 
         cerrar.addEventListener("click", function () {
             $('#resultadoModal').modal('hide');
-            if(contadorI >= 3) {
+            if(contadorI >= 4) {
                 window.location = "./interfazModulo4.html"
             }
             else {

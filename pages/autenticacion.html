@@ -29,14 +29,19 @@
       <script>
         const user = JSON.parse(localStorage.getItem("user"))
         let input = document.querySelector("#input")
+        let estado = false
 
         for (let i = 0; i < user.length; i++) {
-            if (user[i].nombrecompleto == "") {
+            if (user[i].logged === true) {
+              if (user[i].nombrecompleto == "unknown") {
                 
+              }
+              else{
+              window.location.href = "./interfazcertificado.html"
             }
-            else{
-                window.location.href = "./interfazcertificado.html"
+              
             }
+            
         }
 
         input.addEventListener('input', function() {

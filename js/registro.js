@@ -11,12 +11,12 @@ function registrar(e) {
     e.preventDefault();
 
     let user = {
-        avatar: "http://127.0.0.1:5500/sources/login.png",
-        nombrecompleto: "",
+        avatar: "https://cristja.github.io/injury-treat/sources/login.png",
+        nombrecompleto: "unknown",
         user: inputusername.value,
         password: inputuserpass.value,
         logged: false,
-        progreso: 0,
+        progreso: 100,
         certificado: false,
     }
 
