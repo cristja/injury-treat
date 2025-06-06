@@ -27,6 +27,7 @@ const a_head = document.querySelector(".a-head")
 const prog = document.querySelector(".prog")
 const btn = document.querySelector("#btn")
 const prog1 = document.querySelector(".prog1")
+const namen = document.querySelector("#name")
 
 function convertirAMayusculas(cadena) {
     return cadena.toUpperCase();
@@ -36,7 +37,8 @@ for (let index = 0; index < user.length; index++) {
     if (user[index].logged === true) {
         nombre.textContent = `${convertirAMayusculas(user[index].user)}`
         porcentaje.textContent = `Progreso: ${user[index].progreso}%`
-        a_head.innerHTML = `<img class="img-fluid w-25" src="${user[index].avatar}" alt="">`
+        a_head.innerHTML = `<img class="img-fluid w-100" src="${user[index].avatar}" alt="">`
+        namen.innerHTML = `${user[index].user}`
 
         const modulo1 = document.querySelector("#modulo1")
         const modulo2 = document.querySelector("#modulo2")

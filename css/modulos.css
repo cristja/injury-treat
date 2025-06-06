@@ -1,3 +1,7 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
 .fs-0{
     font-size: 4em;
     color: white;
@@ -32,4 +36,7 @@
 }
 .pointer {
     cursor: pointer;
+}
+.w-10 {
+    width: 6%;
 }

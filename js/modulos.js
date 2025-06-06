@@ -4,6 +4,7 @@ const tarjet2 = document.querySelector("#tarjet2")
 const tarjet3 = document.querySelector("#tarjet3")
 const tarjet4 = document.querySelector("#tarjet4")
 const tarjet5 = document.querySelector("#tarjet5")
+const namen = document.querySelector("#name")
 
 function convertirAMayusculas(cadena) {
     return cadena.toUpperCase();
@@ -11,8 +12,9 @@ function convertirAMayusculas(cadena) {
 
 
 for (let index = 0; index < user.length; index++) {
-    a_head.innerHTML = `<img class="img-fluid w-25" src="${user[index].avatar}" alt="">`
+    a_head.innerHTML = `<img class="img-fluid w-100" src="${user[index].avatar}" alt="">`
     if(user[index].logged === true) {
+        namen.innerHTML = `${user[index].user}`
         nombre.innerHTML = `${convertirAMayusculas(user[index].user)}`
             const modulo1 = modulos.find(modulo => modulo.titulo === "MÓDULO 1");
             const modulo2 = modulos.find(modulo => modulo.titulo === "MÓDULO 2");
@@ -79,7 +81,14 @@ for (let index = 0; index < user.length; index++) {
     
 }
 
-        
+const volver = document.querySelector("#volver")
+
+function link_c() {
+    window.location.href = "./MiCuenta.html"
+    localStorage.setItem("last-link", window.location.pathname)
+}
+
+volver.addEventListener("click", link_c)        
      
 
 
@@ -100,6 +109,7 @@ modulos.forEach(element => {
     contenedor.appendChild(card)
 });
 
+
 const tarjet1 = document.querySelector("#tarjet1")
 
 function link() {
@@ -114,10 +124,3 @@ tarjet4.addEventListener("click", link4)
 tarjet5.addEventListener("click", link5)
 
 
-const volver = document.querySelector("#volver")
-
-function link_c() {
-    localStorage.setItem("last-link", window.location.pathname)
-}
-
-volver.addEventListener("click", link_c)

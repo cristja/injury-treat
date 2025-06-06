@@ -8,6 +8,7 @@ const avatars = document.querySelectorAll(".btn-avatar")
 const avatar = document.querySelector(".img-a")
 const guardar2 = document.querySelector("#save2")
 const a_head = document.querySelector(".a-head")
+const namen = document.querySelector("#name")
 let link = document.querySelector("#volver")
 let last_link = localStorage.getItem("last-link")
 link.href = last_link
@@ -22,7 +23,8 @@ certificado.addEventListener("click", link_c)
 for (let i = 0; i < user.length; i++) {
     if(user[i].logged === true) {
         avatar.innerHTML = `<img class=" w-50" src="${user[i].avatar}" alt="">`
-        a_head.innerHTML = `<img class="img-fluid w-25 text-white" src="${user[i].avatar}" alt="">`
+        a_head.innerHTML = `<img class="img-fluid w-100" src="${user[i].avatar}" alt="">`
+        namen.innerHTML = `${user[i].user}`
         if (user[i].certificado == true) {
             certificado.innerHTML = `<a href="./interfazcertificado.html">Prevencion-de-Lesiones.pdf</a>`
         }
