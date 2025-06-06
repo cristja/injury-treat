@@ -20,6 +20,7 @@
     background-image: url(../sources/Recurso\ 3.svg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 .text-blue-aqua {
     color: #139BAF;
@@ -108,6 +109,12 @@
     background-color: transparent;
     border: none;
 }
-.h-55 {
-    height: 400px;
+.w-10 {
+    width: 6%;
+}
+.bg-color {
+    color: rgb(230, 222, 222);
+}
+.bg-color1 {
+    color: rgb(255, 253, 253);
 }
